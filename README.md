@@ -1,5 +1,4 @@
 # project_Alpha_Shop
-![Alpha](https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/305049669_571205841266909_5425156725099941471_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4oX-i90rNgUAX_qZiH6&_nc_ht=scontent.fdad1-3.fna&oh=00_AfD-eDqLDWFVzADCueo4c-tYQLD-We3ms_CPhJFzx0ZflQ&oe=6397D9450
 
 # Dự án Website Alpha Shop - Thế giới bóng rổ Huế
 Xây dựng website Alpha Shop nhằm phục vụ như cầu mua bán giày bóng rổ.
