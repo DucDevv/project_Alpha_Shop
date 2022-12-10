@@ -1,0 +1,246 @@
+@charset "ISO-8859-1";
+/* Vị trí footer*/
+  		*{
+     	margin: 0;
+     	padding: 0;
+     	box-sizing: border-box;
+     	font-family: Roboto;
+ 		}
+		body{
+     	justify-content: flex-end;
+     	min-height: 100vh;
+     	flex-direction: column;
+ 		}
+		footer{
+     	position: relative;
+     	width: 100%;
+     	height: auto;
+     	padding: 50px 100px;
+     	background: black;
+     	display: flex;
+     	justify-content: space-between;
+     	flex-wrap: wrap;
+ 		}
+		footer .container{
+     	display: flex;
+     	justify-content: space-between;
+     	flex-wrap: wrap;
+     	flex-direction: row;
+ 		}
+  		/* Nội dung giới thiệu */
+  		footer .container .noi-dung{
+     	margin-right: 30px;
+ 		}
+		footer  .container .noi-dung.about{
+     	width:40%;
+ 		}
+		footer .container .noi-dung.about p{
+     	color: #999;
+ 		}
+ 		/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+ 		.social-icon{
+     	margin-top: 20px;
+     	display: flex;
+ 		}
+		.social-icon li {
+     	list-style: none;
+ 		}
+ 		.social-icon li a{
+     	display: inline-block;
+     	width: 40px;
+     	height: 40px;
+     	background: #222;
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+     	margin-right: 10px;
+     	text-decoration: none;
+     	border-radius: 4px;
+ 		}
+		.social-icon li a:hover{
+     	background: #f00;
+ 		}
+		.social-icon li a .fa{
+     	color: #fff;
+     	font-size: 20px;
+ 		}
+		.links h2{
+     	position: relative;
+     	color: #fff;
+     	font-weight: 500;
+     	margin-bottom: 15px;
+ 		}
+  		/* Trợ giúp*/
+  		.links h2{
+     	position: relative;
+     	color: #fff;
+     	font-weight: 500;
+     	margin-bottom: 15px;
+ 		}
+		.links h2::before{
+     	content: '';
+     	position: absolute;
+     	bottom: -5px;
+     	left: 0;
+     	width: 50px;
+     	height: 2px;
+     	background: #f00;
+ 		}
+		.links{
+    	position: relative;
+    	width: 25%;
+ 		}
+ 		.links ul li{
+     	list-style: none;
+ 		}
+ 		.links ul li a{
+     	color: #999;
+     	text-decoration: none;
+     	margin-bottom: 10px;
+     	display: inline-block;
+ 		}
+		.links ul li a:hover{
+     	color: #fff;
+ 		}
+ 		/* Thông tin liên hệ */
+ 		.contact h2{
+     	position: relative;
+     	color: #fff;
+     	font-weight: 500;
+     	margin-bottom: 15px;
+ 		}
+		.contact h2::before{
+     	content: '';
+     	position: absolute;
+     	bottom: -5px;
+     	left: 0;
+     	width: 50px;
+     	height: 2px;
+     	background: #f00;
+ 		}
+		.contact{
+     	width: calc(35% - 60px);
+     	margin-right: 0 !important;
+ 		}
+		.contact .info{
+     	position: relative;
+ 		}
+ 		.contact .info li{
+     	display: flex;
+     	margin-bottom: 16px;
+ 		}
+ 		.contact .info li span:nth-child(1) {
+     	color: #fff;
+     	font-size: 20px;
+     	margin-right: 10px;
+ 		}
+		.contact .info li span{
+     	color: #999;
+ 		}
+		.contact .info li a{
+     	color: #999;
+     	text-decoration: none;
+ 		}
+ 		
+ 		/* Đáp ứng trên nhiều màn hình*/
+ 		@media  (max-width: 768px){
+     	footer{
+        padding: 40px;
+        }
+     	footer .container{
+        flex-direction: column;
+     	}
+     	footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+     	}
+     	footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+     	}
+ }
+  		
+  		
+  		.container_swap{
+		width: 2000px;
+		}
+
+		.div_left{
+		width: 600px;
+		float: left;
+		text-align: center;
+		}
+
+		.div_center{
+		width: 600px;
+		float: left;
+		text-align: center;
+		}
+
+		.div_right{
+		width: 600px;
+		float: left;
+		text-align: center;
+		}
+  	
+  		.nd{
+  		width: auto;
+  		margin: auto;
+  		display: flex;
+  		}
+  	
+  		.logo {
+  		color: #f4511e;
+  		font-size: 200px;
+		}
+		
+		@media screen and (max-width: 768px) {
+  		.col-sm-4 {
+    	text-align: center;
+    	margin: 25px 0;
+  		}
+		}
+  	
+  		.container-fluid {
+  		padding: 60px 50px;
+		}
+		
+  		.bg-grey {
+  		background-color: #f6f6f6;
+  		}
+  		
+  		.navbar {
+  		margin-bottom: 0;
+  		background-color: #f4511e;
+  		z-index: 9999;
+  		border: 0;
+  		font-size: 12px !important;
+  		line-height: 1.42857143 !important;
+  		letter-spacing: 4px;
+  		border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  		color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+  		color: #f4511e !important;
+  		background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+  		border-color: transparent;
+  		color: #fff !important;
+		}
+		
+  		.jumbotron {
+  		background-color: #f4511e;
+  		color: #fff;
+  		padding: 100px 25px;
+  		}
+  		
+  		footer .glyphicon {
+		font-size: 20px;
+  		margin-bottom: 20px;
+  		color: #f4511e;
+  		}
